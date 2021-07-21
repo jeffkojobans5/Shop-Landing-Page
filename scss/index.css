@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100vh;
+  background-color: blanchedalmond;
+  font-family: 'Montserrat', sans-serif !important;
+  overflow-x: hidden;
+}
+
+html nav, body nav {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 0px;
+  position: relative;
+  top: -45px;
+}
+
+html nav ul, body nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html nav ul li, body nav ul li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  list-style-type: none;
+  text-align: center;
+}
+
+html nav ul li a, body nav ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+html nav ul li a:hover, body nav ul li a:hover {
+  margin-left: 1.2rem;
+}
+
+html main, body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 85vh;
+}
+
+html main .social, body main .social {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html main .social a, body main .social a {
+  text-decoration: none;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+html main .social a:hover, body main .social a:hover {
+  color: #EB2461;
+}
+
+html main .social p, body main .social p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+html main .social .box, body main .social .box {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+html main .content, body main .content {
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html main .content > h1, body main .content > h1 {
+  position: relative;
+  left: 100px;
+}
+
+html main .content h1, html main .content img, html main .content .price, body main .content h1, body main .content img, body main .content .price {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+html main .content h1, body main .content h1 {
+  justify-self: flex-end;
+  color: #6D8596;
+  font-size: 3rem;
+}
+
+html main .content .price, body main .content .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html main .content .price .hold-price, body main .content .price .hold-price {
+  background-color: #EB2461;
+  position: relative;
+  right: -25px;
+  color: white;
+}
+
+html main .content .price .hold-price h3, body main .content .price .hold-price h3 {
+  font-size: 2.5rem;
+}
+
+html main .content .price .border, body main .content .price .border {
+  position: relative;
+  left: 25px;
+  height: 400px;
+  width: 5px;
+  background-color: #EB2461;
+}
+
+html main .content .price h2, body main .content .price h2 {
+  position: relative;
+  left: -7px;
+  font-size: 3rem;
+  color: #6D8596;
+}
+
+html main .content .price h2 .over, body main .content .price h2 .over {
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+html main .content .price h2 .over:hover, body main .content .price h2 .over:hover {
+  cursor: pointer;
+  color: #EB2461;
+}
+
+html main .slider, body main .slider {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html main .slider .counter, body main .slider .counter {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+html main .slider .counter .hold-circles, body main .slider .counter .hold-circles {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0 auto;
+}
+
+html main .slider .counter .hold-circles .circle, body main .slider .counter .hold-circles .circle {
+  margin: 10px;
+  height: 10px;
+  width: 10px;
+  background-color: transparent;
+  border: 2px solid #6D8596;
+  border-radius: 100%;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+html main .slider .counter .hold-circles .circle:first-child, body main .slider .counter .hold-circles .circle:first-child {
+  border: 2px solid #EB2461;
+}
+
+html main .slider .counter .hold-circles .circle:hover, body main .slider .counter .hold-circles .circle:hover {
+  cursor: pointer;
+  border-color: #EB2461;
+}
+
+.box {
+  height: 50px;
+  width: 100px;
+  background-color: #EB2461;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.sec-color {
+  color: #EB2461;
+}
+
+.white {
+  color: white !important;
+}
+/*# sourceMappingURL=index.css.map */
